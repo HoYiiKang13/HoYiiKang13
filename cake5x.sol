@@ -35,13 +35,13 @@ contract cake5x {
 
     constructor(address _tokenAddress) public {
         Owner = msg.sender;
-        NoUp = 0xeD9f31aa4409B7569209059765890969d4ec06CD;
-        Marketing_addr = 0x48c65630BDdA8F9B315C144FB2e6Ed7dBde6B961;
-        Developer_addr = 0xaA67Fcc2b13D5754713614fDf63f26F8Eeb6115b;
+        NoUp = 0xF7b3840510Dd43eEa6350138f927ff76d338Dc5e;
+        Marketing_addr = 0x31c14F921CAF073aeBA87d12d0Dd313814501a48;
+        Developer_addr = 0x5C85253FEa555Eb106b457F50717191498476d0E;
         token = IBEP20(_tokenAddress);
         investors[1][NoUp].status = 1;
         investors[0][NoUp].self = 1;
-        planB.push(AddressDetail(0, 0xeD9f31aa4409B7569209059765890969d4ec06CD));
+        planB.push(AddressDetail(0, 0xF7b3840510Dd43eEa6350138f927ff76d338Dc5e));
     }
 
     function invest(uint256 upline_index, address upline) external {
